@@ -1,4 +1,5 @@
 firebase-admin
-streamlitaltair
+streamlit
+altair
 pandas
 numpy
