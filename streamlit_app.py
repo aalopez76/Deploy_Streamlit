@@ -62,9 +62,9 @@ if btnActualizar:
   myupdatename = dbNames.document(updatename.id)
   myupdatename.update(
   {
-     "name": newname
-  }
- )
+   "name": newname
+   }
+  )
   
 # ...
 names_ref = list(db.collection(u'names').stream())
