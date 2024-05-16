@@ -1,0 +1,4 @@
+firebase-admin
+streamlitaltair
+pandas
+numpy
