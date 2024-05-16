@@ -56,14 +56,14 @@ newname = st.sidebar.text_input("Actualizar nombre")
 btnActualizar = st.sidebar.button("Actualizar")
 if btnActualizar:
  updatename = loadByName(nameSearch)
-if updatename is None:
- st.write(f"{nameSearch} no existe")
-else:
- myupdatename = dbNames.document(updatename.id)
- myupdatename.update(
- {
+ if updatename is None:
+  st.write(f"{nameSearch} no existe")
+ else:
+  myupdatename = dbNames.document(updatename.id)
+  myupdatename.update(
+  {
      "name": newname
- }
+  }
  )
 
 
