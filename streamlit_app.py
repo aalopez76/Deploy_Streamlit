@@ -65,8 +65,6 @@ if btnActualizar:
      "name": newname
   }
  )
-
-
 # ...
 names_ref = list(db.collection(u'names').stream())
 names_dict = list(map(lambda x: x.to_dict(), names_ref))
