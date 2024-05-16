@@ -67,7 +67,6 @@ if btnActualizar:
  )
   
 # ...
-
 names_ref = list(db.collection(u'names').stream())
 names_dict = list(map(lambda x: x.to_dict(), names_ref))
 names_dataframe = pd.DataFrame(names_dict)
